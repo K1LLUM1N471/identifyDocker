@@ -8,6 +8,7 @@
 HITS="hits.txt"
 HITS_CLEANED="hits_cleaned.txt"
 DOCKER_NAMES="docker-names.txt"
+LOG4J_DETECTOR="log4j-detector-2021.12.13.jar"
 
 #############
 # FUNCTIONS #
@@ -22,7 +23,7 @@ clear
 # https://github.com/mergebase/log4j-detector
 if [ ! -f $HITS ]
 then
-   ./jdk-11/bin/java -jar log4j-detector-2021.12.13.jar /var > $HITS
+   java -jar $LOG4J_DETECTOR /var > $HITS
 fi
 
 # Skip first lines and all problems
