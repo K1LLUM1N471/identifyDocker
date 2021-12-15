@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ################
-# CONFIGURATON #
+# CONFIGURATION #
 ################
 
 HITS="hits.txt"
